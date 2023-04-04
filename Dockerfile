@@ -1,10 +1,10 @@
-FROM node:18-alpine
+FROM node:18
 
 WORKDIR /app
 
 COPY . .
 
-RUN yarn
+RUN npm install
 
 RUN ./node_modules/.bin/tsc
 
